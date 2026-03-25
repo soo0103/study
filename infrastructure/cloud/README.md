@@ -1,5 +1,4 @@
-# Cloud Study 📚
-
+# Cloud Study
 ## 📖 Books
 
 ### 1. AWS 교과서 (AWS Textbook)
