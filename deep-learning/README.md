@@ -3,8 +3,13 @@
 ## 📖 Books
 
 ### 1. Deep Learning from Scratch 1
-- Content: Neural networks, backpropagation, basics of CNN
+- Content: Neural Networks, Backpropagation, Basics of CNN, etc
 - Notes: ./deep-learning-from-scratch-1
 <img width="300" height="386" alt="image" src="https://github.com/user-attachments/assets/48cfc510-afc5-485e-a6fe-54af7a34e9c8" />
 
 ## 📝 Official Documentation
+
+### 1. PyTorch
+- Content: Tensors, Autograd, nn.Module, Loss functions, Optimization, etc
+- Notes: ./pytorch-docs
+- Reference: https://pytorch.org
