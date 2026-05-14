@@ -1,0 +1,98 @@
+openapi: 3.0.0
+info:
+  title: Airline Reservations Management API
+  description: |
+    API for Airline Management System
+  version: 1.0.1
+servers:
+  - url: http://api.example.com/v1
+    description: Production Server
+paths:
+  /reservations/{reservation_id}:
+    put:
+      summary: Book or re-book a reservation
+      description: |
+        Example request:
+        ```
+          PUT http://api.example.com/v1/reservations/d2783fc5-0fee
+        ```
+      parameters:
+        - name: reservation_id
+          in: path
+          required: true
+          description: Unique identifier of the reservation being created or changed
+          schema:
+            type: string
+          example: d2783fc5-0fee
+
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                outbound:
+                  type: object
+                  properties:
+                    flight_num:
+                      type: string
+                      example: "AA 253"
+                    flight_date:
+                      type: string
+                      example: "2026-05-13T13:30:00"
+                    seats:
+                      type: array
+                      items:
+                        type: string
+                returning:
+                  type: object
+                  properties:
+                    flight_num:
+                      type: string
+                      example: "AA 254"
+                    flight_date:
+                      type: string
+                      example: "2026-05-13T-13:33:00"
+                    seats:
+                      type: array
+                      items:
+                        type: string
+            example: [
+              {
+                outbound: {
+                  flight_num: "AA 253",
+                  flight_date: "2026-05-13T13:30:00",
+                  seats: [
+                    "9C"
+                  ]
+                },
+                returning: {
+                  flight_num: "AA 254",
+                  flight_date: "2026-05-13T13:33:00",
+                  seats: [
+                    "10A"
+                  ]
+                }
+              }
+            ]
+
+      responses:
+        '200':
+          description: Successful Reservation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  reservation_id:
+                    type: string
+                    description: some aditional description
+        '403':
+          description: seat(s) are unavailable. Booking failed.
+          content:
+            application/json:
+              schema:
+                type: string
+                description: detailed information
+                
