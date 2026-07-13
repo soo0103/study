@@ -12,6 +12,11 @@
 - Notes: ./deep-learning-from-scratch-2
 <img width="300" height="386" alt="image" src="https://github.com/user-attachments/assets/25fc443d-e162-4a62-90cf-ca364b9c0908" />
 
+### 3. 딥러닝 파이토치 교과서
+- Content: PyTorch, ML, CNN, Time Series Analysis, NLP, Clustering, Reinforcement Learning, Generative Model, etc
+- Notes: ./deep-learning-with-pytorch
+<img width="300" height="386" alt="image" src="https://github.com/user-attachments/assets/fc9e223c-ff04-4707-9d8f-c6976bd4676d" />
+
 
 ## 📝 Official Documentation
 
