@@ -17,6 +17,11 @@
 - Notes: ./deep-learning-with-pytorch
 <img width="300" height="386" alt="image" src="https://github.com/user-attachments/assets/fc9e223c-ff04-4707-9d8f-c6976bd4676d" />
 
+### 4. 트랜스포머를 활용한 자연어처리
+- Content: Transformers, HuggingFace, Encoder, Decoder, Tokenization, ONNX, Few shot, Zero shot, etc
+- Notes: ./nlp-with-transformers
+<img width="300" height="390" alt="image" src="https://github.com/user-attachments/assets/8f52aacf-ba22-495d-94de-215a9132fa3b" />
+
 
 ## 📝 Official Documentation
 
